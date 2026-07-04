@@ -65,6 +65,6 @@ rpmbuild -ba stube.spec
 
 ```bash
 rm -rf ~/.local/share/stube ~/.local/bin/stube \
-       ~/.local/share/applications/stube.desktop \
-       ~/.local/share/icons/hicolor/*/apps/stube.png
+       ~/.local/share/applications/io.github.sudomastery.STube.desktop \
+       ~/.local/share/icons/hicolor/*/apps/io.github.sudomastery.STube.png
 ```

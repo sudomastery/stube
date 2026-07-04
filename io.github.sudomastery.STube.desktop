@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=STube Youtube Downloader
-Comment=Youtube Video downloader for Fedora
+Name=STube
+Comment=Download videos from YouTube and other sites
 Exec=stube
-Icon=stube
+Icon=io.github.sudomastery.STube
 Terminal=false
 Type=Application
 Categories=AudioVideo;Network;

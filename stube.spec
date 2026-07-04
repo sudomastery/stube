@@ -30,13 +30,13 @@ Firefox to get past bot checks.
 %autosetup -n youtube-dl-fedora-UI-%{version}
 
 %install
-install -Dm644 stube.py %{buildroot}%{_datadir}/stube/stube.py
-install -Dm644 stube.desktop %{buildroot}%{_datadir}/applications/stube.desktop
+install -Dm644 io.github.sudomastery.STube.py %{buildroot}%{_datadir}/stube/stube.py
+install -Dm644 io.github.sudomastery.STube.desktop %{buildroot}%{_datadir}/applications/io.github.sudomastery.STube.desktop
 for png in icons/stube-*.png; do
     size=$(basename "$png" .png | cut -d- -f2)
     # hicolor has no 1024x1024 directory; skip that size.
     [ "$size" = 1024 ] && continue
-    install -Dm644 "$png" %{buildroot}%{_datadir}/icons/hicolor/${size}x${size}/apps/stube.png
+    install -Dm644 "$png" %{buildroot}%{_datadir}/icons/hicolor/${size}x${size}/apps/io.github.sudomastery.STube.png
 done
 install -Dm644 io.github.sudomastery.STube.metainfo.xml %{buildroot}%{_metainfodir}/io.github.sudomastery.STube.metainfo.xml
 
@@ -48,7 +48,7 @@ EOF
 chmod 755 %{buildroot}%{_bindir}/stube
 
 %check
-desktop-file-validate %{buildroot}%{_datadir}/applications/stube.desktop
+desktop-file-validate %{buildroot}%{_datadir}/applications/io.github.sudomastery.STube.desktop
 appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/io.github.sudomastery.STube.metainfo.xml
 
 %files
@@ -56,8 +56,8 @@ appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/io.github.sudo
 %doc README.md
 %{_bindir}/stube
 %{_datadir}/stube/
-%{_datadir}/applications/stube.desktop
-%{_datadir}/icons/hicolor/*/apps/stube.png
+%{_datadir}/applications/io.github.sudomastery.STube.desktop
+%{_datadir}/icons/hicolor/*/apps/io.github.sudomastery.STube.png
 %{_metainfodir}/io.github.sudomastery.STube.metainfo.xml
 
 %changelog

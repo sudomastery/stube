@@ -3,8 +3,8 @@
   <id>io.github.sudomastery.STube</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>MIT</project_license>
-  <name>STube Youtube Downloader</name>
-  <summary>Youtube Video downloader for Fedora</summary>
+  <name>STube</name>
+  <summary>Download videos from the web</summary>
   <description>
     <p>
       STube is a simple dark-mode downloader for YouTube and about 1800
@@ -19,13 +19,28 @@
       or Firefox). Cookies never leave your machine.
     </p>
   </description>
-  <launchable type="desktop-id">stube.desktop</launchable>
-  <url type="homepage">https://github.com/sudomastery/youtube-dl-fedora-UI</url>
-  <url type="bugtracker">https://github.com/sudomastery/youtube-dl-fedora-UI/issues</url>
+  <launchable type="desktop-id">io.github.sudomastery.STube.desktop</launchable>
+  <url type="homepage">https://github.com/sudomastery/stube</url>
+  <url type="bugtracker">https://github.com/sudomastery/stube/issues</url>
+  <url type="vcs-browser">https://github.com/sudomastery/stube</url>
   <developer id="io.github.sudomastery">
     <name>sudomastery</name>
   </developer>
+  <branding>
+    <color type="primary" scheme_preference="light">#e2603f</color>
+    <color type="primary" scheme_preference="dark">#7d3045</color>
+  </branding>
   <content_rating type="oars-1.1"/>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/sudomastery/stube/main/screenshots/main.png</image>
+      <caption>Main window with the download queue</caption>
+    </screenshot>
+  </screenshots>
+  <categories>
+    <category>AudioVideo</category>
+    <category>Network</category>
+  </categories>
   <releases>
     <release version="1.0.0" date="2026-07-04"/>
   </releases>

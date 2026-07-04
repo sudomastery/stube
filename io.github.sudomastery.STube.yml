@@ -21,15 +21,6 @@ finish-args:
   # decrypting Chromium-based browser cookies needs the keyring
   - --talk-name=org.freedesktop.secrets
 
-add-extensions:
-  org.freedesktop.Platform.ffmpeg-full:
-    version: '25.08'
-    directory: lib/ffmpeg
-    add-ld-path: .
-
-cleanup-commands:
-  - mkdir -p ${FLATPAK_DEST}/lib/ffmpeg
-
 modules:
   - name: python3-yt-dlp
     buildsystem: simple
@@ -73,4 +64,3 @@ modules:
       - type: git
         url: https://github.com/sudomastery/stube.git
         tag: v1.0.0
-        commit: COMMIT_PLACEHOLDER

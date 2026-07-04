@@ -32,7 +32,17 @@ Built for Fedora, works on GNOME and KDE.
 
 ## Download & Install
 
-### Flatpak (recommended)
+### Fedora (COPR)
+
+```bash
+sudo dnf copr enable sudomastery/stube
+sudo dnf install stube
+```
+
+Updates arrive through `dnf upgrade` like any other package, and once
+the repo is enabled STube also shows up in GNOME Software / Discover.
+
+### Flatpak
 
 Grab the bundle from the
 [latest release](https://github.com/sudomastery/stube/releases/latest)

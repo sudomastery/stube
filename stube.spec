@@ -1,5 +1,5 @@
 Name:           stube
-Version:        1.0.0
+Version:        1.0.1
 Release:        1%{?dist}
 Summary:        Dark-mode GTK4 downloader for YouTube and 1800+ sites (yt-dlp GUI)
 License:        MIT
@@ -61,5 +61,8 @@ appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/io.github.sudo
 %{_metainfodir}/io.github.sudomastery.STube.metainfo.xml
 
 %changelog
+* Sun Jul 05 2026 sudomastery <koigu80@gmail.com> - 1.0.1-1
+- Point Buy Coffee link at Ko-fi
+
 * Sat Jul 04 2026 sudomastery <koigu80@gmail.com> - 1.0.0-1
 - Initial package

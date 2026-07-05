@@ -21,7 +21,7 @@ from yt_dlp.cookies import extract_cookies_from_browser  # noqa: E402
 APP_ID = "io.github.sudomastery.STube"
 APP_NAME = "STube"
 ACCENT = "#E2603F"
-COFFEE_URL = "https://www.buymeacoffee.com/sudomastery"
+COFFEE_URL = "https://ko-fi.com/sudomastery"
 MAX_CONCURRENT = 3
 RETRY_DELAYS = [3, 8, 20]
 

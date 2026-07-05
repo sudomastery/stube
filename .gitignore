@@ -1,3 +1,6 @@
 PACKAGING.md
 __pycache__/
 *.pyc
+build-dir/
+flatpak-repo/
+.flatpak-builder/
